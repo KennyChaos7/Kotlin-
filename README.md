@@ -13,7 +13,8 @@
   7.  库函数
   8.  类的构造函数和构造器
   9.  [伴生对象](https://zhuanlan.zhihu.com/p/26713535)
-  10. 扩展函数
+  10. [扩展函数](https://www.kotlincn.net/docs/reference/extensions.html)
+
     `Kotlin允许开发者在不改变已有类的情况下，为某个类添加新的函数。这个特性叫做扩展函数。
     举一个简单的例子。如果要关闭一个I/O流，使用Java可能是写一个工具方法`
     ```
@@ -41,8 +42,11 @@
     }
     ```
     `复制代码之后，任何实现了Closeable接口的类，都可以使用它本身的closeQuietly()方法来关闭流。我们不再需要那个工具方法了`
+    
+    其实**扩展并不是反射，只是利用kotlin的lambda表达式特性而已**
 
   11. [幕后字段](https://juejin.im/post/5b95321ae51d450e6475b7c6)
+  12. [委托属性](https://www.kotlincn.net/docs/reference/delegated-properties.html)
 
 
 ## kotlin与java的区别
@@ -106,8 +110,10 @@
     ````
 
   15.  [@JvmOverloads](https://www.jianshu.com/p/72d1959a7c56)
-  16.  
-
+  16.  **const** <==> **final**
+  17. **open** 在kotlin允许被继承时就需要用此修饰符修饰类
+  18. **data**修饰符专门用于修饰数据model类，可以继承**sealed**类
+  19. **sealed**修饰符专门用于修饰密封类，也就是类继承受限
 
 
 ## kotlin相关教程及资料
