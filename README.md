@@ -41,16 +41,19 @@
     }
     ```
     `复制代码之后，任何实现了Closeable接口的类，都可以使用它本身的closeQuietly()方法来关闭流。我们不再需要那个工具方法了`
+    
+    其实**扩展并不是反射，只是利用kotlin的lambda表达式特性而已**
 
   11. [幕后字段](https://juejin.im/post/5b95321ae51d450e6475b7c6)
-  12. [in & out](https://zhuanlan.zhihu.com/p/32583310)
-  13. [lateint & by lazy](https://www.jianshu.com/p/e2cb4c65d4ff)
+  12. [委托属性](https://www.kotlincn.net/docs/reference/delegated-properties.html)
+  13. [in & out](https://zhuanlan.zhihu.com/p/32583310)
+  14. [lateint & by lazy](https://www.jianshu.com/p/e2cb4c65d4ff)
       也就是当实际调用到时才会去执行被此修饰符修饰过的属性的初始化
-  14. **inner** **companion** **constructor** **init** 的顺序
-  15. 委托和委托属性
-  16. [中缀表示法](https://juejin.im/post/5ac0dc18f265da2397070124#heading-4)
-  17. [内联函数](https://www.jianshu.com/p/be78824ce1c2)
-
+  15. **inner** **companion** **constructor** **init** 的顺序
+  16. 委托和委托属性
+  17. [中缀表示法](https://juejin.im/post/5ac0dc18f265da2397070124#heading-4)
+  18. [内联函数](https://www.jianshu.com/p/be78824ce1c2)
+  
 ## kotlin与java的区别
   1.  **val** <==> **final**
   2.  定义变量 **var** ，无初始值时需要赋予数据类型
@@ -112,12 +115,16 @@
     ````
 
   15.  [@JvmOverloads](https://www.jianshu.com/p/72d1959a7c56)
-  16.  [泛型](https://juejin.im/post/5acb22eaf265da23994ed42e)
-  17.  **对象表达式** <==> **匿名内部类**
-  18. |**对象表达式**|**对象声明**|
+  16.  **const** <==> **final**
+  17. **open** 在kotlin允许被继承时就需要用此修饰符修饰类
+  18. **data**修饰符专门用于修饰数据model类，可以继承**sealed**类
+  19. **sealed**修饰符专门用于修饰密封类，也就是类继承受限
+  20.  [泛型](https://juejin.im/post/5acb22eaf265da23994ed42e)
+  21.  **对象表达式** <==> **匿名内部类**
+  22. |**对象表达式**|**对象声明**|
       |--- |--- |
       |对象表达式是在使用他们的地方立即执行（及初始化）的|对象声明是在第一次被访问到时延迟初始化的|
-  19. `伴生对象的初始化是在相应的类被加载（解析）时，与 Java 静态初始化器的语义相匹配`
+  23. `伴生对象的初始化是在相应的类被加载（解析）时，与 Java 静态初始化器的语义相匹配`
 
 
 ## kotlin相关教程及资料
