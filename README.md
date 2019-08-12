@@ -6,8 +6,8 @@
   2.  内存回收上是否还是过jvm的gc
   3.  相对java优化了什么
   4.  表达式与语句
-[1](https://www.jianshu.com/p/5b1e142722b0)
-[2](https://www.kotlincn.net/docs/reference/control-flow.html)
+    [1](https://www.jianshu.com/p/5b1e142722b0)
+    [2](https://www.kotlincn.net/docs/reference/control-flow.html)
   5.  高阶函数和lambda表达式
   6.  [标签](https://www.jianshu.com/p/5ac50d5efba2)
   7.  库函数
@@ -17,7 +17,9 @@
 
     `Kotlin允许开发者在不改变已有类的情况下，为某个类添加新的函数。这个特性叫做扩展函数。
     举一个简单的例子。如果要关闭一个I/O流，使用Java可能是写一个工具方法`
+
     ```
+    /* 举一个简单的例子。如果要关闭一个I/O流，使用Java可能是写一个工具方法 */
     /**
      * 安全关闭io流
      * @param closeable
@@ -47,7 +49,13 @@
 
   11. [幕后字段](https://juejin.im/post/5b95321ae51d450e6475b7c6)
   12. [委托属性](https://www.kotlincn.net/docs/reference/delegated-properties.html)
-
+  13. [in & out](https://zhuanlan.zhihu.com/p/32583310)
+  14. [lateint & by lazy](https://www.jianshu.com/p/e2cb4c65d4ff)
+      也就是当实际调用到时才会去执行被此修饰符修饰过的属性的初始化
+  15. **inner** **companion** **constructor** **init** 的顺序
+  16. 委托和委托属性
+  17. [中缀表示法](https://juejin.im/post/5ac0dc18f265da2397070124#heading-4)
+  18. [内联函数](https://www.jianshu.com/p/be78824ce1c2)
 
 ## kotlin与java的区别
   1.  **val** <==> **final**
@@ -114,6 +122,12 @@
   17. **open** 在kotlin允许被继承时就需要用此修饰符修饰类
   18. **data**修饰符专门用于修饰数据model类，可以继承**sealed**类
   19. **sealed**修饰符专门用于修饰密封类，也就是类继承受限
+  20.  [泛型](https://juejin.im/post/5acb22eaf265da23994ed42e)
+  21.  **对象表达式** <==> **匿名内部类**
+  22. |**对象表达式**|**对象声明**|
+      |--- |--- |
+      |对象表达式是在使用他们的地方立即执行（及初始化）的|对象声明是在第一次被访问到时延迟初始化的|
+  23. `伴生对象的初始化是在相应的类被加载（解析）时，与 Java 静态初始化器的语义相匹配`
 
 
 ## kotlin相关教程及资料
@@ -128,5 +142,5 @@
     3.  [3](https://juejin.im/post/5afb95616fb9a07acd4de5b0)
     4.  [4](https://juejin.im/post/5b076911f265da0de2575131)
     5.  [5](https://juejin.im/post/5b30de416fb9a00e9c47de55)
-
-
+- [kotlin特性教程](https://juejin.im/post/5ab063fd6fb9a028e0144abf)
+- [jetbrain的官方教学插件](https://plugins.jetbrains.com/plugin/10081-edutools)
