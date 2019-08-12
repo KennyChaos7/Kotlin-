@@ -13,11 +13,8 @@
   7.  库函数
   8.  类的构造函数和构造器
   9.  [伴生对象](https://zhuanlan.zhihu.com/p/26713535)
-  10. [扩展函数](https://www.kotlincn.net/docs/reference/extensions.html)
-
-    `Kotlin允许开发者在不改变已有类的情况下，为某个类添加新的函数。这个特性叫做扩展函数。
-    举一个简单的例子。如果要关闭一个I/O流，使用Java可能是写一个工具方法`
-
+  10. 扩展函数
+    `Kotlin允许开发者在不改变已有类的情况下，为某个类添加新的函数。这个特性叫做扩展函数。`
     ```
     /* 举一个简单的例子。如果要关闭一个I/O流，使用Java可能是写一个工具方法 */
     /**
@@ -56,7 +53,7 @@
   16. 委托和委托属性
   17. [中缀表示法](https://juejin.im/post/5ac0dc18f265da2397070124#heading-4)
   18. [内联函数](https://www.jianshu.com/p/be78824ce1c2)
-
+  
 ## kotlin与java的区别
   1.  **val** <==> **final**
   2.  定义变量 **var** ，无初始值时需要赋予数据类型
