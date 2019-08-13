@@ -53,8 +53,10 @@
   16. 委托和委托属性
   17. [中缀表示法](https://juejin.im/post/5ac0dc18f265da2397070124#heading-4)
   18. [内联函数](https://www.jianshu.com/p/be78824ce1c2)
+  19. [神奇的_](https://blog.csdn.net/IO_Field/article/details/73015152)
   
-## kotlin与java的区别
+## kotlin与java的区别 
+  0.  ***在做kotlin时，思路应该进行转换，不再像java一样参数即对象，而是参数可以是一个规定好返回和入参的函数声明***
   1.  **val** <==> **final**
   2.  定义变量 **var** ，无初始值时需要赋予数据类型
   3.  定义函数 **fun** ，**Unit**返回类型的返回的是无意义的值，可以直接忽略 , 在返回类型后面加上 **?** 则表示可能返回null
@@ -125,6 +127,7 @@
       |--- |--- |
       |对象表达式是在使用他们的地方立即执行（及初始化）的|对象声明是在第一次被访问到时延迟初始化的|
   23. `伴生对象的初始化是在相应的类被加载（解析）时，与 Java 静态初始化器的语义相匹配`
+  24. [标准函数](https://www.jianshu.com/p/28ce69d58fea)
 
 
 ## kotlin相关教程及资料
@@ -140,4 +143,5 @@
     4.  [4](https://juejin.im/post/5b076911f265da0de2575131)
     5.  [5](https://juejin.im/post/5b30de416fb9a00e9c47de55)
 - [kotlin特性教程](https://juejin.im/post/5ab063fd6fb9a028e0144abf)
-- [jetbrain的官方教学插件](https://plugins.jetbrains.com/plugin/10081-edutools)
+- [jetbrain的官方教学插件](https://plugins.jetbrains.com/plugin/10081-edutools) 
+    *ps: 不太好用，全英文，而且答案检测貌似有问题*
